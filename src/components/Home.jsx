@@ -67,8 +67,8 @@ function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Link to="/login" className="btn btn-primary">Login</Link>
-        <Link to="/register" className="btn btn-secondary">Register</Link>
+        {/* <Link to="/login" className="btn btn-primary">Login</Link>
+        <Link to="/register" className="btn btn-secondary">Register</Link> */}
         <Link to="/upload-json" className="btn btn-info">Upload JSON</Link>
         <Link to="/json-files" className="btn btn-success">View JSON Files</Link>
         <Link to="/event-management" className="btn btn-danger">Event Management</Link>

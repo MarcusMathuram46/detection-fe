@@ -120,7 +120,7 @@ function EventManagement() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={firstPhoto}
-            disabled={currentIndex === 0}
+            disabled={currentIndex === 0} // Correctly disabled when already at the first image
           >
             First
           </motion.button>
@@ -130,7 +130,7 @@ function EventManagement() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={prevPhoto}
-            disabled={sortedPhotos.length <= 1}
+            disabled={sortedPhotos.length <= 1 || currentIndex === 0}
           >
             Previous
           </motion.button>
@@ -140,7 +140,10 @@ function EventManagement() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={nextPhoto}
-            disabled={sortedPhotos.length <= 1}
+            disabled={
+              sortedPhotos.length <= 1 ||
+              currentIndex === sortedPhotos.length - 1
+            }
           >
             Next
           </motion.button>
@@ -150,7 +153,7 @@ function EventManagement() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={lastPhoto}
-            disabled={currentIndex === sortedPhotos.length - 1}
+            disabled={currentIndex === sortedPhotos.length - 1} // Correctly disabled when already at the last image
           >
             Last
           </motion.button>
