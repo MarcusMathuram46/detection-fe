@@ -17,10 +17,10 @@ export const AuthProvider = ({ children }) => {
     setIsAuthenticated(true);
   };
 
-  const logout = (navigate) => {  // Accept navigate function as parameter
+  const logout = (navigate) => {
     localStorage.removeItem("authToken");
     setIsAuthenticated(false);
-    navigate("/login");  // Redirect to login after logout
+    navigate("/login");
   };
 
   return (

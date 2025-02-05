@@ -26,7 +26,8 @@ function Login() {
     try {
       const response = await axios.post(
         "http://localhost:5000/api/user/login",
-        loginData
+        loginData,
+        { headers: { "Content-Type": "application/json" } }
       );
       const info = response.data;
 

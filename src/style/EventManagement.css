@@ -1,0 +1,52 @@
+.event-management-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter-container select {
+  padding: 8px;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.photo-container {
+  position: relative;
+}
+
+.event-photo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+.nav-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
