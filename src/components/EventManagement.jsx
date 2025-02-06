@@ -83,9 +83,13 @@ function EventManagement() {
           }}
         >
           <option value="All">All</option>
-          <option value="Anomaly Detection">Anomaly Detection</option>
-          <option value="Behavior Recognition">Behavior Recognition</option>
-          <option value="Event Logging">Event Logging</option>
+          <option value="Fall Detection">Fall Detection</option>
+          <option value="People Counting">People Counting</option>
+          <option value="Pet Counting">Pet Counting</option>
+          <option value="Illegal Parking">Illegal Parking</option>
+          <option value="Illegal Dumping">Illegal Dumping</option>
+          <option value="Loitering">Loitering</option>
+          <option value="Customized Detection">Customized Detection</option>
         </select>
       </div>
 
