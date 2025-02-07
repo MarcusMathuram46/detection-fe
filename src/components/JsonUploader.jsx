@@ -21,7 +21,7 @@ const JsonUploader = () => {
     formData.append("jsonFile", file);
 
     try {
-      const response = await axios.post("http://localhost:5000/upload-json", formData, {
+      const response = await axios.post("http://localhost:3000/upload-json", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

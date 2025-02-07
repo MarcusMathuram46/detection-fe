@@ -9,14 +9,14 @@ const JsonFileList = () => {
   const [fileContent, setFileContent] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:5000/json-files").then((res) => {
+    axios.get("http://localhost:3000/json-files").then((res) => {
       setFiles(res.data.files);
     });
   }, []);
 
   const handleFileClick = async (fileName) => {
     setSelectedFile(fileName);
-    const res = await axios.get(`http://localhost:5000/json-files/${fileName}`);
+    const res = await axios.get(`http://localhost:3000/json-files/${fileName}`);
     setFileContent(JSON.stringify(res.data, null, 2));
   };
 

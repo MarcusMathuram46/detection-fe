@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import "../style/EventManagement.css"; // Ensure this file exists
 
-const API_URL = "http://localhost:5000/api/event-images"; // Update if needed
+const API_URL = "http://localhost:3000/api/event-images"; // Update if needed
 
 function EventManagement() {
   const [eventPhotos, setEventPhotos] = useState([]);
@@ -106,7 +106,7 @@ function EventManagement() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src={`http://localhost:5000${sortedPhotos[currentIndex]?.src}`}
+            src={`http://localhost:3000${sortedPhotos[currentIndex]?.src}`}
             alt="Event"
             className="event-photo"
           />
